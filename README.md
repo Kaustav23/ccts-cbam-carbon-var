@@ -30,20 +30,23 @@ Institutional-grade financial risk engine and empirical simulation modeling the 
 ## Repository Structure
 
 - ccts_cbam_quant_engine.py: Core Python mathematical engine, Monte Carlo VaR simulator, and SEBI BRSR Principle 6 data parser.
-- pp.py: Streamlit interactive analytical dashboard with dynamic EBITDA waterfall bridges and MACC step-charts.
+- app.py: Streamlit interactive analytical dashboard with dynamic EBITDA waterfall bridges and MACC step-charts.
 - ccts_cbam_simulation_output.txt: Full deterministic and stochastic engine log across base, moderate, and stress scenarios.
-- equirements.txt: Python package dependencies.
+- ccts_cbam_research_paper.pdf: Formal LaTeX institutional research paper.
+- requirements.txt: Python package dependencies.
 
 ---
 
 ## Local Installation & Execution
 
-`ash
-# 1. Install dependencies
-pip install -r requirements.txt
+1. Install dependencies:
+   pip install -r requirements.txt
 
-# 2. Run the quantitative simulation
-python ccts_cbam_quant_engine.py
+2. Run the quantitative simulation:
+   python ccts_cbam_quant_engine.py
 
-# 3. Launch the interactive dashboard
-streamlit run app.py
+3. Launch the interactive dashboard:
+   streamlit run app.py
+
+---
+**Data Grounding**: Audited FY2025–26 SEBI BRSR Principle 6 disclosures, Bureau of Energy Efficiency (BEE) target trajectories, and Official EU-ETS / CBAM benchmark registries.
